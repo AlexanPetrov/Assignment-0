@@ -3,12 +3,13 @@
 function countOfAllIndexMatchingNumbers(nums) {
     let counter = 0;
     for (let i = 0; i < nums.length; i++) {
-        counter++;
+        if (nums[i] === i) {
+            counter++;
+        }
     }
     return counter;
 }
-let nums = [0,1,2,3,4];
-console.log(countOfAllIndexMatchingNumbers(nums));
+console.log(countOfAllIndexMatchingNumbers([0,1,4,3,5]));
 
 // Do not edit this line;
 module.exports = countOfAllIndexMatchingNumbers;

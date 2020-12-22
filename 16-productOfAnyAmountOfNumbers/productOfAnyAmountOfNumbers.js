@@ -1,6 +1,9 @@
+/* spread operator */
+
 function productOfAnyAmountOfNumbers(...args) {
-  // Insert code here;
+    return args.reduce(function(a, c) { return a*c; });
 }
+console.log(productOfAnyAmountOfNumbers(2,4,6,2));
 
 // Do not edit this line;
 module.exports = productOfAnyAmountOfNumbers;
